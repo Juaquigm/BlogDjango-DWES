@@ -6,12 +6,12 @@
         <div>
             <h1><a href="/">Blog Gaditano</a></h1>
         </div>
-        {{% for post in posts %}}
+        {% for post in posts %}
         <div>
-            <p>Publicado: {{post.fecha_publicado}}</p>
+            <p>Publicado: {{post.fecha_publicada}}</p>
             <h2><a href="">{{post.titulo}}</a></h2>
             <p>{{post.texto|linebreaksbr}}</p>
         </div>
-        {{% endfor %}}
+        {% endfor %}
     </body>
 </html>
