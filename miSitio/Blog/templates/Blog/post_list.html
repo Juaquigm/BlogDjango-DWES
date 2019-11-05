@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Blog Gaditano</a></h1>
+        </div>
+        {{% for post in posts %}}
+        <div>
+            <p>Publicado: {{post.fecha_publicado}}</p>
+            <h2><a href="">{{post.titulo}}</a></h2>
+            <p>{{post.texto|linebreaksbr}}</p>
+        </div>
+        {{% endfor %}}
+    </body>
+</html>
