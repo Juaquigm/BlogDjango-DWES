@@ -1,6 +1,6 @@
 
 .page-header {
-    background-color: #C25100;
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
