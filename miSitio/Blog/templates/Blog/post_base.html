@@ -22,6 +22,7 @@
                             <p>Publicado: {{post.fecha_publicada}}</p>
                         </div>
                         <a class="btn btn-default" href="{% url 'post_editar' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <a class="btn btn-default" href="{% url 'post_borrar' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
                         <h2>{{post.titulo}}</a></h2>
                         <p>{{post.texto|linebreaksbr}}</p>
                     </div>

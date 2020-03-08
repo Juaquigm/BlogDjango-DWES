@@ -34,3 +34,8 @@ def post_editar(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'Blog/post_editar.html', {'form': form})
+
+def post_borrado(request, pk):
+    post = get_object_or_404(Post, pk = pk)
+    post.delete()
+    return redirect('/')
